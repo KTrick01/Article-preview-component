@@ -28,6 +28,7 @@ body {
 }
 
 .articleComponent {
+    box-shadow: 34px 36px 111px -39px rgba(0,0,0,0.77);
     border-radius: 1rem;
     max-width: 800px;
     
