@@ -1,23 +1,21 @@
-const shareBtn = document.querySelector(".ShareBtn")
-const shareBtnContainer = document.querySelector(".ShareBtnContainer")
+const shareBtn = document.querySelectorAll(".ShareBtn")
+const shareBtnContainer = document.querySelectorAll(".ShareBtnContainer")
 const container = document.querySelector(".socialContainer")
 const main = document.querySelector(".articleComponent")
 
-shareBtn.addEventListener('click', function() {
-
-  container.classList.toggle("none")
-  shareBtnContainer.classList.toggle("active--statusCon")
-  shareBtn.classList.toggle("active--statusBtn")
-
-  if (!container.classList.contains("none")) {
-    main.style.margin = "8rem"
+for (let i = 0; i < shareBtn.length; i++) {
+    
+    shareBtn[i].addEventListener('click', function() {
         
-  } else {
-    main.style.margin = "2rem"
-  }
-   
-  
-})
+        container.classList.toggle("none")
+        shareBtnContainer[i].classList.toggle("active--statusCon")
+        shareBtn[i].classList.toggle("active--statusBtn")
+         
+        
+      })
+}
+
+
 
 
 
