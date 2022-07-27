@@ -138,13 +138,7 @@ body {
 
 }
 
-.ShareBtn:hover {
-    transform: scale(1.2);
-}
 
-.ShareBtnContainer:hover {
-    transform: scale(1.2);
-}
 
 .active--statusCon {
     background-color:var(--Desaturated-Dark-Blue);
@@ -199,8 +193,18 @@ body {
     cursor: pointer;
     transition: transform .3s;
 }
-.icon:hover {
-    transform: scale(1.2);
+
+@media (hover: hover) {
+    .ShareBtn:hover {
+        transform: scale(1.2);
+    }
+    
+    .ShareBtnContainer:hover {
+        transform: scale(1.2);
+    }
+    .icon:hover {
+        transform: scale(1.2);
+    }
 }
 
 @media (max-width: 780px) {
